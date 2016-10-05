@@ -2,8 +2,11 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-  <div class="post">
-    <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-  </div>
-{% endfor %}
+<div class="blog">
+  <h2 class="decorate">News from the Flint Property Portal</h2>
+  {% for post in site.posts %}
+    <div class="post">
+      <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    </div>
+  {% endfor %}
+</div>
