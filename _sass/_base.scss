@@ -56,6 +56,7 @@ a {
 
     h1 {
         font-weight: 300;
+        font-size: 24px;
     }
 
     h2 {
@@ -87,6 +88,7 @@ a {
             text-align: left;
             font-size: $size-mid;
 
+            &.active,
             &:hover {
                 background: lighten($background, 10%);
             }
@@ -102,8 +104,10 @@ a {
 
 .page-content {
     background: #eee;
-    overflow: scroll;
-
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    section.post,
     article.post {
         background: #fff;
         max-width: 680px;
@@ -117,6 +121,7 @@ a {
             display: inline-block;
             padding: 0px 2px;
             margin-bottom: 1em;
+            font-size: 24px;
         }
 
         p {
