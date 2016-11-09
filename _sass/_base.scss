@@ -106,7 +106,7 @@ a {
     background: #eee;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: calc(100% - 95px);
+    height: 100%; // calc(100% - 95px);
 
     section.post,
     article.post {

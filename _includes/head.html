@@ -16,8 +16,8 @@
 
   <script type="text/javascript">
     $(function() {
-      var height = $('body').outerHeight() - $('.site-header').outerHeight();
-      console.log("Height", height, $('.site-header').outerHeight());
+      var height = $('body').outerHeight(); // - $('.site-header').outerHeight();
+      // console.log("Height", height, $('.site-header').outerHeight());
       $('iframe').height(height);
     });
   </script>
