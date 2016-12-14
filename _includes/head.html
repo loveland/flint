@@ -19,6 +19,13 @@
       var height = $('body').outerHeight(); // - $('.site-header').outerHeight();
       // console.log("Height", height, $('.site-header').outerHeight());
       $('iframe').height(height);
+
+      if(window.location.hash) {
+        var hash = 
+        $('iframe').attr('src', 'https://gclb.sitecontrol.us/dashboards/flint#b=0&t=' + 
+          window.location.hash.replace('#', ''));
+      }
+
     });
   </script>
 
