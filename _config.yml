@@ -9,9 +9,12 @@
 title: Flint Property Portal
 email: team@makeloveland.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  You can look up information for properties in Flint, Michigan such as ownership, 
+  value, and condition. You can also make maps for your neighborhood, ward, or 
+  custom area. This site is delivered to you by the Genesee County Land Bank 
+  Authority and the City of Flint as part of their commitment to increasing the 
+  public’s access to information and ensuring governmental transparency and 
+  accountability.
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "http://flintpropertyportal.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
