@@ -7,7 +7,7 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
+  <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -22,12 +22,16 @@
 
   <script type="text/javascript">
     $(function() {
-      var height = $('body').outerHeight(); // - $('.site-header').outerHeight();
-      // console.log("Height", height, $('.site-header').outerHeight());
-      $('iframe').height(height);
+      function resize() {
+        var height = $('body').outerHeight(); // - $('.site-header').outerHeight();
+        $('iframe').height(height);
+      }
+
+      $(window).resize(resize);
+      resize();
 
       if(window.location.hash) {
-        $('iframe').attr('src', 'https://gclb.sitecontrol.us/dashboards/flint#b=0&t=' + 
+        $('iframe').attr('src', 'https://gclb.sitecontrol.us/dashboards/flint#b=0&t=' +
           window.location.hash.replace('#', ''));
       }
     });
